@@ -11,6 +11,8 @@ $app->get('/[{name}]', function ($request, $response, $args) {
 
 $app->get('/user/{screen_name}/timeline', function($request, $response, $args) use ($app){
     $container = $app->getContainer();
+    $data = unserialize(file_get_contents('tmp.bin'));
+    $access_token = $data['access_token'];
     $access_token = $_SESSION['access_token'];
     $connection = new \Abraham\TwitterOAuth\TwitterOAuth(
         $container->get('settings')['twitter']['consumer_key'],

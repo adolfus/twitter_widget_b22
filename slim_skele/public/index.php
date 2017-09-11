@@ -56,6 +56,8 @@ if (!isset($_SESSION['access_token'])) {
     if ( 0 == filesize( 'tmp.bin' ) ){
         //var_dump($_SESSION);
         file_put_contents('tmp.bin', serialize($_SESSION));
+    }else{
+    	$_SESSION = unserialize(file_get_contents('tmp.bin'));
     }
 }
 
