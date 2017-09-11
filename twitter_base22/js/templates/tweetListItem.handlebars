@@ -1,0 +1,25 @@
+{{#each tweets}} 
+    <li class="tl-tweetlist-tweet">
+        <div class="tl-tweet u-cf" data-tweet-id="{{id}}">
+            <div class="tl-tweet-brand">
+                <div class="icon icon--twitter " aria-label="" title="" role="presentation"></div>
+            </div>
+            <div class="tl-tweet-author">
+                <div class="tweetauthor">
+                <a class="tweetauthor-link identity"
+                   href="https://twitter.com/{{user.screen_name}}" aria-label="{{user.name}}">
+                    <span class="tweetauthor-avatar identity-avatar">
+                        <img class="avatar avatar--edge"
+                             data-src-2x="https://pbs.twimg.com/bigger.png" alt=""
+                             data-src-1x="{{user.profile_image_url}}"
+                             src="{{user.profile_image_url}}">
+                    </span>
+                    <span class="tweetauthor-name identity-name" title="{{user.name}}" >{{user.name}}</span>                    
+                    <span class="tweetauthor-screenname" title="{{user.screen_name}}" dir="ltr">{{user.screen_name}}</span>
+                </a>
+                </div>
+            </div>
+            <p class="tl-tweet-text" lang="es" dir="ltr">{{text}}</p>
+        </div>
+    </li>
+{{/each}}
