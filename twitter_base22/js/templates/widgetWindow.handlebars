@@ -1,0 +1,24 @@
+<div class="tl-header" data-scribe="section:header">
+    <h1 class="tl-header-title u-inlineblock">{{title}}</h1>
+    <article>
+    <ul>
+        <li><a href="#"
+               onclick="window.open('https://twitter.com/intent/user?original_referer=&amp;region=screen_name&amp;screen_name={{screen_name}}&amp;source=followbutton&amp;variant=1.1', 'twitter', 'toolbar=no, width=650, height=300'); return false;">
+                <span class="social-button twitter"><img src="img/twitter.png" alt="twitter" height="34" width="34"/>{{text}}</span></a>
+        </li>
+    </ul>  
+    </article>
+</div>
+<div class="tl-body customisable-border">    
+    <div class="tl-viewport">
+        <ol class="tl-tweetlist">
+        </ol>
+        <!--<div class="tl-loadmore tl-loadmore--edge">
+            <button class="tl-loadmore-prompt tl-loadmore-prompt--edge tl-showmore--edge tl-showmore">Cargar más Tweets</button>
+            <p class="tl-loadmore-endoftime no-more-pane" role="alert">No hay más Tweets en esta cronología.</p>
+        </div>-->
+    </div>
+</div>
+<div class="tl-footer" data-scribe="section:header">
+    <input id="tweet-txt" placeholder="{{placeholder}}"></input>  
+</div>

@@ -1,0 +1,17 @@
+@mixin box-shadows($size, $color){
+    -moz-box-shadow: $size $color;/* drop shadow */
+    -webkit-box-shadow: $size $color;/* drop shadow */
+    box-shadow: $size $color; /* dropshadow */
+}
+
+@mixin transition-anim($prop, $time, $time_func){
+    -webkit-transition-duration: $time;
+    transition-duration: $time;
+    -webkit-transition-timing-function: $time_func;
+    transition-timing-function: $time_func;
+    -webkit-transition-property: $prop;
+    transition-property: $prop;
+    -moz-transition: $prop $time $time_func;
+    -o-transition: $prop $time $time_func;
+    -ms-transition: $prop $time $time_func;
+}

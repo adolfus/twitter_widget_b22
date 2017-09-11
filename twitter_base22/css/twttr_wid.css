@@ -1,0 +1,268 @@
+/**  Base Imports **/
+/*@import "base_styles";*/
+blockquote, button, h1, h2, h3, h4, h5, h6, iframe, ol, p, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+a {
+  color: #3b94d9;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:active {
+  color: #3b94d9;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:hover {
+  color: #55acee;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:visited {
+  color: #3b94d9;
+  text-decoration: none;
+  outline: 0;
+}
+
+.u-linkBlend:not(:focus):not(:hover):not(:active) {
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.tl-widget {
+  width: 70%;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: Helvetica,Roboto,"Segoe UI",Calibri,sans-serif;
+  max-width: 1200px;
+  background-color: #DDD;
+  border-radius: 4px;
+  border-color: #d2d2d2;
+  border-width: 1px;
+  border-style: solid;
+}
+
+@media only screen and (max-width: 480px) {
+  .tl-widget {
+    width: 100%;
+  }
+}
+
+.tl-widget .tl-header {
+  padding: 10px;
+  background: #7bbae0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.tl-widget .tl-header .tl-header-title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #fff;
+}
+
+.tl-widget .tl-header .tl-header-title .tl-header-byline {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #8899A6;
+}
+
+.tl-widget .tl-header article {
+  display: inline-block;
+  margin-left: 30px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 12px;
+  position: absolute;
+}
+
+.tl-widget .tl-header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tl-widget .tl-header ul li {
+  float: left;
+  margin-right: 25px;
+}
+
+.tl-widget .tl-header a .social-button {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 200px;
+  height: 30px;
+  padding-right: 12px;
+  padding-left: 34px;
+  padding-top: 8px;
+  color: #00a9f1;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.tl-widget .tl-header a .social-button.twitter {
+  background-color: #fff;
+}
+
+.tl-widget .tl-header a .social-button.twitter img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-top: -5px;
+  margin-left: -26px;
+  margin-right: 5px;
+  border-bottom-left-radius: 4px;
+  float: left;
+}
+
+.tl-widget .tl-header a:hover .social-button.twitter {
+  color: #0085be;
+}
+
+.tl-widget .tl-body {
+  position: relative;
+  background-color: #FFF;
+  border-top: 1px solid rgba(15, 70, 100, 0.12);
+  border-bottom: 1px solid rgba(15, 70, 100, 0.12);
+}
+
+.tl-widget .tl-body .tl-viewport {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 300px;
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist li:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist .tl-tweetlist-tweet {
+  border-top: 1px solid rgba(15, 70, 100, 0.12);
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist .tl-tweetlist-tweet:first-of-type {
+  border-top: none;
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist .tl-tweetlist-tweet .tl-tweet {
+  padding: 10px;
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist .tl-tweetlist-tweet .tl-tweet .tl-tweet-author {
+  position: relative;
+  margin-bottom: 2px;
+  padding-left: 4%;
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist .tl-tweetlist-tweet .tl-tweet .tl-tweet-author .tweetauthor {
+  max-width: 100%;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist .tl-tweetlist-tweet .tl-tweet .tl-tweet-author .tweetauthor-link {
+  display: inline-block;
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist .tl-tweetlist-tweet .tl-tweet .tl-tweet-author .tweetauthor-link .tweetauthor-avatar {
+  position: static;
+  top: auto;
+  left: auto;
+  float: left;
+  margin-right: 8px;
+  width: 55px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist .tl-tweetlist-tweet .tl-tweet .tl-tweet-author .tweetauthor-link .tweetauthor-name {
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #7bbae0;
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist .tl-tweetlist-tweet .tl-tweet .tl-tweet-author .tweetauthor-link .tweetauthor-screenname {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #a9a9a9;
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist .tl-tweetlist-tweet .tl-tweet .tl-tweet-author .tweetauthor-link .tweetauthor-screenname:before {
+  white-space: pre;
+  content: "\A\200e";
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist .tl-tweetlist-tweet .tl-tweet .tl-tweet-text {
+  margin-top: 6px;
+  margin-left: 102px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.tl-widget .tl-body .tl-viewport .tl-tweetlist .tl-tweetlist-tweet .tl-tweet .tl-tweet-text[dir=ltr] {
+  text-align: left;
+  direction: ltr;
+}
+
+.tl-widget .tl-footer {
+  background: #EEE;
+  padding: 10px;
+}
+
+.tl-widget .tl-footer input {
+  padding: 8px;
+  display: block;
+  border: 1px solid #ccc !important;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.tl-widget.tl-widget--edge {
+  border-radius: 5px;
+}
+
+.u-cf:after, .u-cf:before {
+  content: " ";
+  display: table;
+}
+
+.u-inlineblock {
+  display: inline-block !important;
+  max-width: 100%;
+}
